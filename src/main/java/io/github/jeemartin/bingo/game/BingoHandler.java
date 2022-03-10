@@ -69,7 +69,6 @@ public class BingoHandler {
         countDown.start(prepareTime, plugin);
     }
 
-    @SuppressWarnings("deprecation")
     private static void createTeams(Bingo game, int teamSize, List<Player> players, ItemStack[][] bingoItems) {
         Collections.shuffle(players);
         TeamGenerator tg = new TeamGenerator();
@@ -107,7 +106,7 @@ public class BingoHandler {
             t.setColor(team.getColor());
             for(Player player : Bukkit.getOnlinePlayers()) {
                 if(team.hasPlayer(player)) {
-                    t.addPlayer(player);
+                    t.addEntry(player.getDisplayName());
                 }
             }
         }
