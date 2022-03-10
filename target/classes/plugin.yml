@@ -1,0 +1,8 @@
+name: Bingo
+version: 1.0
+api-version: 1.16
+author: Martynas
+main: io.github.jeemartin.bingo.Main
+description: Bingo in Minecraft 1.16.4 Spigot server
+commands:
+  bingo:
